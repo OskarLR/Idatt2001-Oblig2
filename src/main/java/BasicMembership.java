@@ -1,4 +1,5 @@
 public class BasicMembership extends Membership{
+
     @Override
     public int registerPoints(int bonusPointBalance, int newPoints) {
         return 0;
@@ -8,4 +9,5 @@ public class BasicMembership extends Membership{
     public String getMembershipName() {
         return "Basic";
     }
+
 }

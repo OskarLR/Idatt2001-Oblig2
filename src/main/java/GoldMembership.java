@@ -12,4 +12,5 @@ public class GoldMembership extends Membership{
     public String getMembershipName() {
         return "Gold";
     }
+
 }

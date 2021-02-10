@@ -11,4 +11,5 @@ public class SilverMembership extends Membership{
     public String getMembershipName() {
         return "Silver";
     }
+
 }
