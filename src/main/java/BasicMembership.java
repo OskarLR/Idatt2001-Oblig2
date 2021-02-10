@@ -2,7 +2,8 @@ public class BasicMembership extends Membership{
 
     @Override
     public int registerPoints(int bonusPointBalance, int newPoints) {
-        return 0;
+
+        return bonusPointBalance + newPoints;
     }
 
     @Override
