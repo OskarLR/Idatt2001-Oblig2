@@ -43,7 +43,7 @@ public class MemberArchive {
     public int findPoints(int memberNumber, String password){
         BonusMember member;
         try{
-            member = Objects.requireNonNull(this.members.get(memberNumber));
+            member = this.members.get(memberNumber);
         }catch (NullPointerException e){
             return -1;
         }
@@ -69,7 +69,7 @@ public class MemberArchive {
         boolean success = false;
         BonusMember member;
         try{
-            member = Objects.requireNonNull(this.members.get(memberNumber));
+            member = this.members.get(memberNumber);
             member.registerBonusPoints(bonusPoints);
             success = true;
         }catch (NullPointerException ignored){

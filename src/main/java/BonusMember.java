@@ -32,7 +32,7 @@ public class BonusMember {
     }
 
     public void registerBonusPoints(int newPoints){
-        this.membership.registerPoints(this.bonusPointsBalance,newPoints);
+        this.bonusPointsBalance = this.membership.registerPoints(this.bonusPointsBalance,newPoints);
         this.checkAndSetMembership();
     }
 
