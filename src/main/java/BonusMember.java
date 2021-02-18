@@ -44,6 +44,10 @@ public class BonusMember {
 
     public int getMemberNumber(){ return memberNumber;}
 
+    public void setPassword(String password){
+        this.password = password;
+    }
+
     private void checkAndSetMembership(){
         Membership membership = new BasicMembership();
         if(this.bonusPointsBalance > SILVER_LIMIT)membership = new SilverMembership();
